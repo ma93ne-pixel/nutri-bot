@@ -60,7 +60,7 @@ async def ask_claude(user_id: int, user_message: str) -> str:
                 "anthropic-version": "2023-06-01",
                 "content-type": "application/json"
             },
-            json={"model": "claude-sonnet-4-20250514", "max_tokens": 1024,
+            json={"model": "claude-sonnet-4-6", "max_tokens": 1024,
                   "system": SYSTEM_PROMPT, "messages": history}
         )
         response.raise_for_status()
